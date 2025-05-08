@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Finance Tracker</title>
+        <link rel="stylesheet" href="./main_styles.css?v=1">
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+    <body>
+        <header>
+            <h1><span><i class="fa-solid fa-arrow-trend-up"></i>
+                </span>
+                Personal Finance Tracker</h1>
+            <nav>
+                <ul>
+                    <li><a href="../add_Transaction/add_transaction.html">Add Transaction</a></li>
+                    <li><a href="../transactions_page/transactions.html">Transactions</a></li>
+                    <li><a href="../settings/settings.html">Settings</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <main>
+            <section id="overview">
+                <div id="income">
+                    <div>
+                    <h2>Income</h2>
+                    <h2 id="income-val"></h2>
+                    </div>
+                    <i class="fa-solid fa-up-long"></i>
+                </div>
+                 <div id="expense">
+                    <div>
+                    <h2>Expense</h2>
+                    <h2 id="expense-val"></h2>
+                    </div>
+                    <i class="fa-solid fa-down-long"></i>
+                </div>
+                 <div id="savings">
+                    <div>
+                    <h2>Savings</h2>
+                    <h2 id="savings-val"></h2>
+                    </div>
+                    <i class="fa-solid fa-piggy-bank"></i>
+                </div>
+            </section>
+            <div id="addincome">
+                <h1 id="close-btn">X</h1>
+                <h1 id="add">Add Income</h1> 
+            <input type="number" name="incomeval" id="incomeno" placeholder="Enter Income">
+            <button id="submit">Submit</button>
+            </div>
+            <section id="charts">
+                <canvas id="expenseChart"></canvas>
+                <canvas id="categoryChart"></canvas>
+            </section>
+        </main>
+       
+        <footer>
+            <h2>Toggle Currency</h2>
+            <span>USD</span>
+            <label class="switch">
+                <input type="checkbox" id="toggle-btn">
+                <span class="slider round"></span>
+            </label>
+            <span>INR</span>
+        </footer>
+        <script src="./script.js"></script>
+</html>

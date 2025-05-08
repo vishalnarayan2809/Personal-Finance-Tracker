@@ -1,0 +1,239 @@
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(189, 206, 243);
+}
+
+
+/* Toggle Switch CSS */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+header {
+    background-color: rgb(222, 250, 244);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 2px 2px 8px grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+nav {
+    flex: 0.5; /* Make nav take up remaining space */
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    font-weight: 600;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    margin: 0;
+}
+
+#overview {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+#income , #expense, #savings{
+    background-color: rgb(211, 253, 211);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    border-radius: 25px;
+}
+
+#income{
+    cursor: pointer;
+}
+
+#expense {
+    background-color: rgb(255, 210, 210);
+}
+
+#savings {
+    background-color: rgb(212, 244, 255);
+}
+
+#income-val , #expense-val,#savings-val{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+}
+.fa-arrow-trend-up {
+    margin: 0;
+}
+span{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    font-weight: 600
+}
+
+input {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: inline-block;
+    min-width: 300px;
+    overflow: auto;
+}
+
+#addincome {
+    background-color: rgb(255, 223, 227);
+    display: none;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 500px black;
+    margin: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#close-btn {
+    position: relative;
+    left: 150px;
+    right: 0;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+#add{
+    margin-bottom: 25px;
+}
+
+#expenseChart {
+  background-color: rgb(255, 220, 220); /* or any color you like */
+  margin: 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 15px;
+  width: 600px; /* Set desired width */
+  height: 600px; 
+  margin-right: 25px;
+}
+
+
+#charts {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+footer {
+    background-color: rgb(222, 250, 244);
+    padding: 15px;
+}

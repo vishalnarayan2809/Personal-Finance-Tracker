@@ -1,0 +1,48 @@
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(189, 206, 243);
+}
+
+header {
+    background-color: whitesmoke;
+    display: flex;
+    padding: 15px;
+    box-shadow: 2px 2px 8px grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+#title {
+    flex: 0.7;
+}
+
+#reset-icon {
+    font-size: 2rem; /* or set a width/height if it's a graphic */
+}
+
+#reset{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 10px;
+    background-color: rgb(239, 211, 215);
+    min-width: 200px;
+    padding: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
